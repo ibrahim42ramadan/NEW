@@ -1,0 +1,403 @@
+/*global style*/
+* {
+  padding: 0;
+  margin: 0;
+  display: flex-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+/* praivet style */
+
+/* .hearosectoin  */
+.hearosectoin {
+  margin-bottom: 50px;
+}
+.hearosectoin nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: ; */
+  color: white;
+  font-size: large;
+  background-color: blue;
+  position: relative;
+}
+.icon {
+  background-color: white;
+  color: blue;
+  margin-left: 100px;
+  width: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 10px;
+}
+
+section .vesple {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+.main-div {
+  width: 100%;
+  height: 100%;
+  background-image: url(./back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  color: white;
+}
+.content h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.content p {
+  font-size: 20;
+  margin-bottom: 10px;
+}
+.content button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+.get {
+  color: white;
+  background-color: black;
+}
+.learn_more {
+  color: white;
+  background-color: blue;
+}
+/* welcome sectio */
+.welcome {
+  margin-bottom: 120px;
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+h2::before {
+  position: absolute;
+  top: 60px;
+  right: 45%;
+  content: "";
+  width: 100px;
+  height: 3px;
+  border-radius: 7px;
+
+  background-color: blue;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-bottom: 40px;
+}
+/* card style */
+
+.col {
+  /* flex-basis: 33%; */
+  position: relative;
+  border: 1px solid rgb(79, 79, 178);
+  width: 33.33%;
+  padding: 10px;
+  margin-left: 30px;
+}
+.card .icon p {
+  color: blue;
+}
+.card h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.card p {
+  margin-bottom: 10px;
+  color: rgb(207, 204, 204);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .icon p {
+  font-size: 50px;
+  /* align-self: flex-start; */
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
+/* medecal specilists section */
+
+.doctor_box {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  background-image: url(./person3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: aqua;
+  overflow: hidden;
+}
+.Specialists .col {
+  border: none;
+}
+
+.Specialists .content {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(8, 7, 7, 0.7);
+}
+.content .doc_header {
+  color: rgb(64, 135, 173);
+  font-size: 30px;
+}
+
+.doc_icons span {
+  padding: 10px;
+  color: rgb(25, 21, 54);
+  font-size: 20px;
+}
+.doctor_box:hover .content {
+  display: flex;
+}
+/* Staff sectio style */
+.Doctor_staff .col {
+  border: 1px solid rgb(79, 79, 178);
+  padding: 30px;
+}
+.staff_box {
+  display: flex;
+}
+.staff_box p i {
+  /* margin-top: 1px; */
+  font-size: 35px;
+  color: rgb(131, 131, 234);
+}
+.staff_content {
+  margin-left: 20px;
+}
+.staff_title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.staff_content .staff_discription {
+  color: rgb(207, 204, 204);
+  font-size: 20px;
+}
+
+.Doctor_staff .col::before {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: rgb(94, 94, 221, 0.5);
+  transition: 1s;
+}
+.Doctor_staff .col:hover:before {
+  width: 100%;
+  height: 100%;
+}
+/* whay sction style */
+.whay_section {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+}
+
+.whay_section h3 {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 30;
+  font-weight: 1000;
+}
+.whay_section h3::before {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  content: "";
+  width: 30px;
+  height: 3px;
+  border-radius: 7px;
+
+  background-color: blue;
+}
+.whay_col {
+  width: 50%;
+}
+.why_box p {
+  color: rgb(201, 197, 197);
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 500px;
+  line-height: 35px;
+}
+.why_box ul li {
+  color: rgb(201, 197, 197);
+  font-size: large;
+  font-weight: small;
+}
+.list_item {
+  font-size: x-large;
+  color: rgb(73, 106, 170);
+}
+.why_box_img {
+  height: 600px;
+  background-image: url(./person.jpg);
+  background-size: cover;
+}
+.icon_row {
+  display: flex;
+  /* align-items: center; */
+}
+.atach {
+  margin-bottom: 100px;
+
+  color: aliceblue;
+  height: 300px;
+  background-image: url(./earth-1756274_1280.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.devIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon_col {
+  margin-top: 100px;
+
+  position: relative;
+  width: 33.33%;
+  padding: 10px;
+  margin-left: 30px;
+}
+.icon_col p {
+  padding: 10px;
+  font-size: 20px;
+}
+.icon_itme {
+  font-size: 30px;
+  /* color: rgb(91, 91, 227); */
+}
+.salary_col {
+  position: relative;
+  border: 1px solid rgb(104, 104, 110);
+  width: 33.33%;
+  padding: 10px;
+  margin-left: 30px;
+}
+.salaryItem {
+  position: relative;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.circle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 10px;
+  /* display: flex; */
+  width: 50px;
+  height: 50px;
+  /* background-color: aqua; */
+  border-radius: 50%;
+  border: 2px solid red;
+}
+.dis {
+  color: rgb(80, 80, 79);
+  margin-bottom: 20px;
+}
+.salaryItem button {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+}
+.salary_col:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgb(87, 89, 89, 0.5);
+  transition: 0.5s;
+}
+.salary_col:hover:before {
+  /* color: rgb(91, 91, 231); */
+  height: 100%;
+}
+.salary_col:hover {
+  color: rgb(76, 134, 235);
+}
+.OurTeam {
+  background-image: url(./wall-769963_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 200px;
+  background-attachment: fixed;
+  height: 300px;
+}
+.Our_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.person_col {
+  /* position: relative; */
+  width: 33.33%;
+  height: 300px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 70px;
+}
+.thomnaile {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.thomnaile img {
+  width: 100%;
+  /* size: cover; */
+}
